@@ -1,6 +1,6 @@
 // fetch("lkdl",{}).then().then()
 
-fetch("https://api.github.com/users/GuzidYagmur")
+fetch("https://api.githldkml/users/GuzidYagmur")
 .then(res => res.json()).then(data => {
     user.innerHTML=`
     <div class="container">
@@ -60,4 +60,8 @@ fetch("https://api.github.com/users/GuzidYagmur")
 
     
     `
-});
+})
+
+.catch(e=> {
+    user.innerHTML = "Bir hata oluştu"
+})
